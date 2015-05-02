@@ -1,0 +1,24 @@
+{
+    "name": "postcss-canadian-stylesheets",
+    "version": "0.0.0",
+    "description": "PostCSS plugin for writing Canadian stylesheets",
+    "keywords": ["postcss", "css", "postcss-plugin", "canada", "canadian", "canadian-stylesheets"],
+    "author": "Godfrey Chan <godfreykfc@gmail.com>",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url":  "https://github.com/chancancode/postcss-canadian-stylesheets.git"
+    },
+    "dependencies": {
+        "postcss": "^4.1.5"
+    },
+    "devDependencies": {
+        "gulp-eslint": "0.9.0",
+        "gulp-mocha":  "2.0.1",
+        "chai":        "2.2.0",
+        "gulp":        "3.8.11"
+    },
+    "scripts": {
+        "test": "gulp"
+    }
+}
