@@ -4,22 +4,16 @@
 
 [PostCSS]: https://github.com/postcss/postcss
 
-```css
-.foo {
-    /* Input example */
-}
-```
-
-```css
-.foo {
-  /* Output example */
-}
-```
+![Canadian stylesheets](canadian-stylesheets.png)
 
 ## Usage
 
 ```js
 postcss([ require('postcss-canadian-stylesheets') ])
 ```
+
+## Ember CLI
+
+For Ember CLI applications, see [ember-cli-canadian-stylesheets](https://github.com/chancancode/ember-cli-canadian-stylesheets).
 
 See [PostCSS] docs for examples for your environment.
