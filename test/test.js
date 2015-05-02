@@ -12,10 +12,36 @@ var test = function (input, output, opts, done) {
 
 describe('postcss-canadian-stylesheets', function () {
 
-    /* Write tests here
+    it('converts colour to color', function (done) {
+        test('a{ colour: white; }', 'a{ color: white; }', {}, done);
+    });
 
-    it('does something', function (done) {
-        test('a{ }', 'a{ }', { }, done);
-    });*/
+    it('converts background-colour to color', function (done) {
+        test('a{ background-colour: white; }', 'a{ background-color: white; }', {}, done);
+    });
+
+    it('converts border-colour to color', function (done) {
+        test('a{ border-colour: white; }', 'a{ border-color: white; }', {}, done);
+    });
+
+    it('converts grey to gray', function (done) {
+        test('a{ color: grey; }', 'a{ color: gray; }', {}, done);
+    });
+
+    it('converts lightgrey to lightgray', function (done) {
+        test('a{ color: lightgrey; }', 'a{ color: lightgray; }', {}, done);
+    });
+
+    it('converts dimgrey to dimgray', function (done) {
+        test('a{ color: dimgrey; }', 'a{ color: dimgray; }', {}, done);
+    });
+
+    it('converts !sorry to !important', function (done) {
+        test('a{ color: gray !sorry; }', 'a{ color: gray !important; }', {}, done);
+    });
+
+    it('converts all the things', function (done) {
+        test('a{ colour: grey !sorry; }', 'a{ color: gray !important; }', {}, done);
+    });
 
 });
